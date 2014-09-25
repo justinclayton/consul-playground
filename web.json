@@ -1,0 +1,11 @@
+{
+  "service": {
+    "name": "web",
+    "tags": ["rails"],
+    "port": 80,
+    "check": {
+      "script": "/vagrant/true_or_false.sh",
+      "interval": "5s"
+    }
+  }
+}
