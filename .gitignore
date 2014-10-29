@@ -1,3 +1,4 @@
+.vagrant/
 consul
 jq
 hipchat_room_message
