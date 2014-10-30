@@ -1,4 +1,5 @@
 .vagrant/
+ui/
 consul
 jq
 hipchat_room_message

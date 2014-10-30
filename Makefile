@@ -1,6 +1,6 @@
 all: prep vagrant
 
-prep: jq consul hipchat_room_message ansible
+prep: jq consul ui hipchat_room_message ansible
 
 ansible: /usr/local/bin/ansible
 
@@ -12,10 +12,16 @@ jq:
 	chmod +x jq
 
 consul:
-	curl -LOks https://dl.bintray.com/mitchellh/consul/0.4.0_linux_amd64.zip
-	unzip 0.4.0_linux_amd64.zip
+	curl -LOks https://dl.bintray.com/mitchellh/consul/0.4.1_linux_amd64.zip
+	unzip 0.4.1_linux_amd64.zip
 	chmod +x consul
-	rm -f 0.4.0_linux_amd64.zip
+	rm -f 0.4.1_linux_amd64.zip
+
+ui:
+	curl -LOks https://dl.bintray.com/mitchellh/consul/0.4.1_web_ui.zip
+	unzip 0.4.1_web_ui.zip
+	mv dist ui
+	rm -f 0.4.1_web_ui.zip
 
 hipchat_room_message:
 	curl -LOks https://raw.githubusercontent.com/hipchat/hipchat-cli/master/hipchat_room_message
