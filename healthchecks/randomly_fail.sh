@@ -5,5 +5,11 @@ T=1
 number=$RANDOM
 
 let "number %= $BINARY"
-[[ $number -eq $T ]] || exit 42
-exit 0
+if [ $number -eq $T ]; then
+  echo "Everything is broken!"
+  exit 42
+else
+  echo "Everything is normal."
+  exit 0
+fi
+

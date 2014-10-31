@@ -4,6 +4,7 @@
     "tags": ["sometag"],
     "port": 80,
     "check": {
+      "notes": "Randomly toggles between happy and angry",
       "script": "/vagrant/healthchecks/randomly_fail.sh",
       "interval": "5s"
     }
