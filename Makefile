@@ -27,6 +27,11 @@ hipchat_room_message:
 	curl -LOks https://raw.githubusercontent.com/hipchat/hipchat-cli/master/hipchat_room_message
 	chmod +x hipchat_room_message
 
+envconsul:
+	curl -LOks https://github.com/hashicorp/envconsul/releases/download/v0.2.0/envconsul_linux_amd64
+	mv envconsul_linux_amd64 envconsul
+	chmod +x envconsul
+
 vagrant: vagrant-leader vagrant-webs
 
 vagrant-leader:

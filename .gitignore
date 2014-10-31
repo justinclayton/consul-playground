@@ -1,5 +1,6 @@
 .vagrant/
 ui/
 consul
+envconsul
 jq
 hipchat_room_message
