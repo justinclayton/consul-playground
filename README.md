@@ -1,4 +1,5 @@
-ham-jam
-=======
+# Getting Started
 
-Experiments with possible ham components
+```
+make
+```
