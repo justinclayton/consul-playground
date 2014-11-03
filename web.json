@@ -4,8 +4,8 @@
     "tags": ["sometag"],
     "port": 80,
     "check": {
-      "notes": "Randomly toggles between happy and angry",
-      "script": "/vagrant/healthchecks/randomly_fail.sh",
+      "notes": "Runs a script to simulate service success or failure",
+      "script": "/vagrant/healthchecks/never_fail.sh",
       "interval": "5s"
     }
   }
